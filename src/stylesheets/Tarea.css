@@ -1,0 +1,53 @@
+.tarea-contenedor {
+  width: 500px;
+  min-height: 65px;
+  background-color: #232946;
+  margin: 5px 0;
+  padding: 8px 15px 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  /* border: 2px solid #e16162; */
+  cursor: pointer;
+}
+
+/* Degrade con pseudo clases */
+.tarea-contenedor:nth-child(3n + 1) {
+  background-color: #392D69; 
+}
+/* nth-child: enesimo hijo? 983434 */
+.tarea-contenedor:nth-child(3n + 2) {
+  background-color: #69314F; 
+}
+.tarea-contenedor:nth-child(3n + 3) {
+  background-color: #983434; 
+}
+
+.tarea-texto {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywhere;
+
+}
+
+.tarea-contenedor-iconos { 
+  display: flex;
+  align-items: center;
+}
+
+.tarea-icono {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+/* Tarea completada */
+
+.tarea-contenedor.completada {
+  background-color: #bdb8ac;
+  text-decoration: line-through;
+}

@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from './imgs/jim-logo.png';
+import ListaDeTareas from './components/ListaDeTareas';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app-tareas'>
+      <div className='logo-contenedor'>
+        <img 
+          src={logo} 
+          className='logo-img'
+        />      
+      </div>
+      <div className='tareas-lista-principal'>
+        <h1>Mis Tareas</h1>
+        <ListaDeTareas />
+      </div>
     </div>
   );
 }
 
 export default App;
+
+/* separar el logo otra vez en un componente */
+
+/*
+RETOS: 
+1) almacenar tareas para que cuando se vuelva a abrir a la app sigan estando alli.
+2) desarrollar app con otro enfoque:
+incluir formulario y lista de tareas (components) DIRECTAMENTE en la app principal, sin el componente intermedio (lista de tareas).
+s
+*/
